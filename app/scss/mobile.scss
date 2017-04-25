@@ -1,0 +1,71 @@
+.header {
+    overflow: auto;
+    height: 540px;
+    background: url('../img/header_background.jpg') center no-repeat;
+    font-family: 'Montserrat-Bold';
+    color: $main_color;
+
+    &__registration {
+        text-align: center;
+        margin-top: 31px;
+        font-size: 14px;
+
+        &_login,
+        &_signup {
+            cursor: pointer;
+        }
+
+        &_login {
+            margin: 0 7px;
+        }
+
+        &_signup {
+            margin: 0 9px;
+            padding: 8px 16px;
+            border: 2px solid #fff;
+            border-radius: 17px;
+        }
+    }
+
+
+
+    &__title {
+        margin-top: 128px;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    &__share_dreams {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    &__find_partner {
+        margin-top: 8px;
+        text-align: center;
+        font: 18px 'Roboto-Light';
+        line-height: 21px;
+    }
+
+    &__find_partner_btn {
+        display: block;
+        width: 280px;
+        height: 40px;
+        margin: 15px auto;
+        padding-top: 5px;
+        border: none;
+        border-radius: 19px;
+        background: #ff4e50;
+        font-size: 14px;
+        color: $main_color;
+        letter-spacing: 1px;
+        word-spacing: -.5px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+}
