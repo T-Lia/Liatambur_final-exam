@@ -1,14 +1,40 @@
 .header {
     overflow: auto;
-    height: 540px;
-    background: url('../img/header_background.jpg') center no-repeat;
+    margin: 0 auto;
     font-family: 'Montserrat-Bold';
     color: $main_color;
 
+    @include respond-to (mobile) {
+        width: 320px;
+        height: 540px;
+        background: url('../img/header_320.jpg') center no-repeat;
+    }
+
+    @include respond-to(tablet) {
+        width: 768px;
+        height: 702px;
+        background: url('../img/header_768.jpg') center no-repeat;
+    }
+
+    @include respond-to(desktop) {
+        width: 1440px;
+        height: 700px;
+        background: url('../img/header_1440.jpg') center no-repeat;
+    }
+
+
     &__registration {
-        text-align: center;
-        margin-top: 31px;
         font-size: 14px;
+
+        @include respond-to (mobile) {
+            text-align: center;
+            margin-top: 31px;
+        }
+
+        @include respond-to(tablet) {
+            float: right;
+            margin: 49px 42px 0 0;
+        }
 
         &_login,
         &_signup {
@@ -28,12 +54,19 @@
     }
 
 
-
     &__title {
-        margin-top: 128px;
-        text-align: center;
         font-size: 20px;
         letter-spacing: 1px;
+
+        @include respond-to(mobile) {
+            margin-top: 128px;
+            text-align: center;
+        }
+
+        @include respond-to(tablet) {
+            float: left;
+            margin: 49px 0 0 48px;
+        }
     }
 
     &__share_dreams {
@@ -44,7 +77,8 @@
     }
 
     &__find_partner {
-        margin-top: 8px;
+        width: 220px;
+        margin: 8px auto;
         text-align: center;
         font: 18px 'Roboto-Light';
         line-height: 21px;
@@ -66,6 +100,4 @@
         cursor: pointer;
         outline: none;
     }
-
-
 }

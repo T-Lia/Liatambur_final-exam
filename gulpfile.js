@@ -26,6 +26,16 @@ gulp.task ('styles', function () {
         .pipe(browserSynk.reload({stream: true}));
 });
 
+// gulp.task ('styles_test', function () {
+//     return gulp.src('app/scss/main.scss')
+//         .pipe(sass())
+//         // .pipe(concatCss('main.style.min.css'))
+//         // .pipe(uglifyCss())
+//         .pipe(gulp.dest('dist/css'))
+//         .pipe(browserSynk.reload({stream: true}));
+// });
+
+
 gulp.task ('html', function () {
     gulp.src('app/index.html')
         .pipe(gulp.dest('dist'))
