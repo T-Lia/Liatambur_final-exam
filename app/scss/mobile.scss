@@ -22,7 +22,6 @@
         background: url('../img/header_1440.jpg') center no-repeat;
     }
 
-
     &__registration {
         font-size: 14px;
 
@@ -34,6 +33,11 @@
         @include respond-to(tablet) {
             float: right;
             margin: 49px 42px 0 0;
+        }
+
+        @include respond-to(desktop) {
+            float: right;
+            margin: 49px 242px 0 0;
         }
 
         &_login,
@@ -53,7 +57,6 @@
         }
     }
 
-
     &__title {
         font-size: 20px;
         letter-spacing: 1px;
@@ -64,40 +67,94 @@
         }
 
         @include respond-to(tablet) {
-            float: left;
-            margin: 49px 0 0 48px;
+             width: 180px;
+             margin: 49px 0 0 48px;
+         }
+
+        @include respond-to(desktop) {
+            width: 180px;
+            margin: 49px 0 0 249px;
         }
     }
 
     &__share_dreams {
-        margin-top: 30px;
-        text-align: center;
-        font-size: 30px;
-        line-height: 37px;
+
+        @include respond-to(mobile) {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+        @include respond-to(tablet) {
+            width: 485px;
+            margin: 144px auto 0;
+            padding-right: 3px;
+            text-align: center;
+            font-size: 52px;
+            line-height: 64px;
+        }
+
+        @include respond-to(desktop) {
+            padding-right: 1px;
+        }
     }
 
     &__find_partner {
-        width: 220px;
-        margin: 8px auto;
-        text-align: center;
-        font: 18px 'Roboto-Light';
-        line-height: 21px;
+
+        @include respond-to(mobile) {
+            width: 220px;
+            margin: 8px auto;
+            text-align: center;
+            font: 18px 'Roboto-Light';
+            line-height: 21px;
+        }
+
+        @include respond-to(tablet) {
+            width: 400px;
+            margin: 27px auto;
+            padding-right: 3px;
+            text-align: center;
+            font: 24px 'Roboto-Light';
+            line-height: 21px;
+        }
+
+        @include respond-to(desktop) {
+            margin: 26px auto;
+            padding-right: 0;
+        }
     }
 
     &__find_partner_btn {
         display: block;
-        width: 280px;
-        height: 40px;
-        margin: 15px auto;
-        padding-top: 5px;
+        background: #ff4e50;
         border: none;
         border-radius: 19px;
-        background: #ff4e50;
         font-size: 14px;
         color: $main_color;
-        letter-spacing: 1px;
-        word-spacing: -.5px;
         cursor: pointer;
         outline: none;
+
+
+        @include respond-to(mobile) {
+            width: 280px;
+            height: 40px;
+            margin: 15px auto;
+            padding-top: 5px;
+            letter-spacing: 1px;
+            word-spacing: -.5px;
+        }
+
+        @include respond-to(tablet) {
+            width: 225px;
+            height: 40px;
+            margin: 37px auto;
+            padding: 2px 5px 0 0;
+        }
+
+        @include respond-to(tablet) {
+            margin: 38px auto;
+            padding: 2px 3px 0 0;
+        }
     }
 }
